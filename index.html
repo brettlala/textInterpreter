@@ -2,18 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src='script.js' defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>Project Starter</title>
+    <title>Talk to me computer</title>
+    <style>
+        body{ 
+            width: 80%;
+            margin: 100px auto;
+        }
+        #text{
+            width: 100%;
+            height: 30vh;
+            margin: 0 auto;
+        }
+    </style>
+    <script src='script.js' defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Light & Dark Theme toggler</h1>
-        <button>Goto Dark</button>
-    </div>
-
-    
+  <textarea name="text" id="text"></textarea>
+  <label for="speed">Speed</label>
+  <input type="number" class="speed" value="1" min=".5" max ="5" step=".5">
+  <button id="play">Play</button>
+  <button id="pause">Pause</button>
+  <button id="stop">Stop</button>
 </body>
-<script src="script.js"></script>
 </html>
